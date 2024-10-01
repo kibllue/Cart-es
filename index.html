@@ -4,52 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/style.css">
-    <title>Flashcard</title>
+    <title>Quizzes - Literatura</title>
+</head>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        background-image: url(foto.jpg); /* Caminho para a sua imagem */
+        background-size: cover; /* Ajusta a imagem para cobrir todo o fundo */
+        background-repeat: no-repeat; /* Evita repetição da imagem */
+        background-position: center center; /* Centraliza a imagem no fundo */
+    }
+    #container {
+        width: 100%; /* Largura do contêiner */
+    
+        margin: 50px auto; /* Centraliza o contêiner na página */
+        background: rgba(218, 222, 233, 0.8); /* Fundo branco com transparência */
+        padding: 5px;
+        border-radius: 5px;
+    }
+</style>
 </head>
 <body>
+    
+    <h1>QUIZZES DE LITERATURA </h1>
     <main>
-        <section id="container">
-            <article class="cartao">
-                <div class="cartao__conteudo">
-                    <h3>Programação</h3>
-                    <div class="cartao__conteudo__pergunta">
-                        <p>O que é JavaScript?</p>
-                    </div>
-                    <div class="cartao__conteudo__resposta">
-                        <p>O JavaScript é uma linguagem de programação</p>
-                    </div>
-                </div>
-            </article>
-            
-            <article class="cartao">
-                <div class="cartao__conteudo">
-                    <h3>Programação</h3>
-                    <div class="cartao__conteudo__pergunta">
-                        <p>O que é CSS?</p>
-                    </div>
-                    <div class="cartao__conteudo__resposta">
-                    <p>O CSS é uma linguagem de estilização</p>
-                    </div>
-                </div>
-            </article>
-
-            <article class="cartao">
-                <div class="cartao__conteudo">
-                    <h3>Programação</h3>
-                    <div class="cartao__conteudo__pergunta">
-                        <p>O que é JavaScript?</p>
-                    </div>
-                    <div class="cartao__conteudo__resposta">
-                        <p>O JavaScript é uma linguagem de programação</p>
-                    </div>
-                </div>
-            </article>
-        
-        </section>
+        <section id="container"></section>
         
     </main>
     <footer>
-        <p>Projeto desenvolvido pela Alura, sem fins lucrativos</p>
+        <p>Tiffany Gabriely 2C</p>
     </footer>
+    <script src="app.js"></script>
+    <script src="perguntas.js"></script>
 </body>
 </html>
+
