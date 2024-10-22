@@ -2,64 +2,67 @@ const perguntas = [
     {
         pergunta: "Quanto tempo um tubarão vive?",
         opcoes: [
-            "Machado de Assis",
-            "Joaquim Manuel de Macedo",
-            "José de Alencar",
-            "Clarice Lispector"
+            "Entre 15 e 20 anos ",
+            "Entre 30 e 56 anos ",
+            "Entre 5 e 30 anos ",
+            "Entre 20 e 30 anos"
         ],
-        resposta: 0 // índice da resposta correta
+        resposta: 3 // índice da resposta correta
     },
     {
-        pergunta: "Qual o nome da maior criatura marinha?",
+        pergunta: "Qual o maior tubarão já registrado?",
         opcoes: [
-            "Romance",
-            "Poesia",
-            "Conto",
-            "Teatro"
-        ],
-        resposta: 0
-    },
-    {
-        pergunta: "Quem é o autor de 'O Guarani'?",
-        opcoes: [
-            "Aluísio Azevedo",
-            "José de Alencar",
-            "Machado de Assis",
-            "Carlos Drummond de Andrade"
+            "Tubarão-branco",
+            "Tubarão-baleia",
+            "Tubarão-martelo",
+            "a"
         ],
         resposta: 1
     },
     {
-        pergunta: "",
+        pergunta: "Qual o Tubarão mais temido?",
         opcoes: [
-            "Iracema",
-            "Senhora",
-            "O Guarani",
-            "Memórias Póstumas de Brás Cubas"
+            "a",
+            "a",
+            "Tubarão branco",
+            "a"
         ],
         resposta: 2
     },
-    
     {
-        pergunta: "Qual autor é conhecido como o 'poeta da língua portuguesa'?",
+        pergunta: "Quais tubarões são inofensivos?",
         opcoes: [
-            "Fernando Pessoa",
-            "Cecília Meireles",
-            "Carlos Drummond de Andrade",
-            "Vinicius de Moraes"
+            "Cação-lixa",
+            "Grande cação-frango",
+            "Tubarão-prego",
+            "a"
         ],
         resposta: 0
     },
+    
     {
-        pergunta: "Em que ano foi publicado 'O Cortiço'?",
+        pergunta: "Que animal os tubarões temem?",
         opcoes: [
-            "1890",
-            "1888",
-            "1892",
-            "1889"
+            "Golfinhos",
+            "Orcas",
+            "a",
+            "a"
         ],
         resposta: 1
-    }
+    },
+    {
+        pergunta: "Qual o Tubarão mais antigo?",
+        opcoes: [
+            "a",
+            "a",
+            "a",
+            "Tubarão-da-Groenlândia"
+        ],
+        resposta: 3
+    },
+
+    
+ 
     
 ];
 
@@ -107,11 +110,11 @@ function verificarResposta(index) {
     });
 
     if (respostaSelecionada === undefined) {
-        resultadoDiv.innerHTML = "Por favor, selecione uma opção.";
+        resultadoDiv.innerHTML = "Por favor, selecione uma opção. 🤨";
     } else if (respostaSelecionada === perguntas[index].resposta) {
-        resultadoDiv.innerHTML = "Resposta correta!";
+        resultadoDiv.innerHTML = "Resposta correta! 💯";
     } else {
-        resultadoDiv.innerHTML = "Resposta errada! Tente novamente. ";
+        resultadoDiv.innerHTML = "Resposta incorreta! Tente novamente. ❌ ";
     }
 
     resultadoDiv.style.display = "block";

@@ -9,7 +9,7 @@ function gerarFlashcards() {
         const conteudo = `
             <div class="cartao__conteudo">
             
-                <h3>Literatura Brasileira</h3>
+                <h3>Animais marinhos</h3>
                 <div class="cartao__conteudo__pergunta">
                     <p>${item.pergunta}</p>
                 </div>
@@ -39,12 +39,12 @@ function gerarFlashcards() {
             if (respostaEscolhida) {
                 const resposta = respostaEscolhida.value;
                 if (resposta === item.respostaCorreta) {
-                    alert('Correto!');
+                    alert('"Resposta correta! 💯!');
                 } else {
-                    alert('Incorreto! Tente novamente.');
+                    alert('Resposta incorreta! Tente novamente. ❌');
                 }
             } else {
-                alert('Por favor, selecione uma resposta.');
+                alert('Por favor, selecione uma opção. 🤨');
             }
         });
     });
